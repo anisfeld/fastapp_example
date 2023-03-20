@@ -1,16 +1,10 @@
-# Deploy Button
-domains:
-- domain: mrcartoonsters.tk
-  type: PRIMARY
-  zone: mrcartoonsters.tk
-name: fastapp
 region: nyc
 services:
 - environment_slug: python
   github:
     branch: main
     deploy_on_push: true
-    repo: mrcartoonster/fastapp
+    repo: anisfeld/fastapp_example
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
